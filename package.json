@@ -1,6 +1,6 @@
 {
   "name": "vue-jazzicon",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Vue component for danfinlay/jazzicon",
   "main": "dist/vue-jazzicon.common.js",
   "author": "man15h",
