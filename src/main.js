@@ -4,7 +4,7 @@ import Jazzicon from './components';
 
 Vue.config.productionTip = false;
 
-Vue.use(Jazzicon);
+Vue.component(Jazzicon.name, Jazzicon);
 new Vue({
   render: h => h(App)
 }).$mount('#app');

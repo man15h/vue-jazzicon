@@ -47,7 +47,7 @@ App.vue
 </template>
 
 <script>
-  import { Jazzicon } from 'vue-jazzicon'
+  import Jazzicon from 'vue-jazzicon'
 
   export default {
     components: {
