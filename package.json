@@ -1,0 +1,44 @@
+{
+  "name": "vue-jazzicon",
+  "version": "0.1.0",
+  "description": "Vue component for danfinlay/jazzicon",
+  "main": "dist/vue-jazzicon.common.js",
+  "author": "man15h",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vue-jazzicon ./src/components/index.js",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "jazzicon",
+    "ethereum",
+    "metamask"
+  ],
+  "dependencies": {
+    "jazzicon": "^1.5.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-plugin-unit-jest": "^3.1.1",
+    "@vue/cli-service": "^3.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/server-test-utils": "^1.0.0-beta.29",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-vue": "^5.2.2",
+    "prettier": "^1.16.4",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
