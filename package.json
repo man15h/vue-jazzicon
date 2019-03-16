@@ -6,13 +6,14 @@
   "author": "man15h",
   "license": "MIT",
   "scripts": {
+    "build": "npm run clean && cross-env NODE_ENV=production vue-cli-service build --dest lib --target lib --name  vue-jazzicon ./src/components/index.js",
+    "clean": "rimraf dist && rimraf lib && rimraf coverage",
     "dev": "vue-cli-service serve",
-    "prod": "vue-cli-service build",
     "lint": "eslint --ext .js,.vue -f table src/",
     "lint-fix": "eslint --ext .js,.vue -f table src/ --fix",
-    "build": "cross-env NODE_ENV=production vue-cli-service build --dest lib --target lib --name  vue-jazzicon ./src/components/index.js",
+    "prod": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "clean": "rimraf dist"
+    "test": "npm run test:unit"
   },
   "keywords": [
     "vue",
@@ -24,7 +25,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run test:unit && npm run clean"
+      "pre-commit": "npm run lint && npm run test && npm run clean"
     }
   },
   "dependencies": {
