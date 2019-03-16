@@ -94,7 +94,6 @@ export default {
       var elements = this.newPaper(diameter, this.genColor(remainingColors));
       var container = elements.container;
       var svg = document.createElementNS(this.svgns, 'svg');
-      console.log(svg);
       svg.setAttributeNS(null, 'x', '0');
       svg.setAttributeNS(null, 'y', '0');
       svg.setAttributeNS(null, 'width', diameter);
