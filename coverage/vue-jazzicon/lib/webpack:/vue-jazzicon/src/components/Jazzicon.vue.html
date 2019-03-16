@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for vue-jazzicon/lib/webpack:/vue-jazzicon/src/components/Jazzicon.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../index.html">All files</a> / <a href="index.html">vue-jazzicon/lib/webpack:/vue-jazzicon/src/components</a> Jazzicon.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/82</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/64</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div ref="jazzicon" /&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import MersenneTwister from 'mersenne-twister';
+import Color from 'color';
+import addressToNumber from './addressToNumber';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >export default {</span>
+  name: 'Jazzicon',
+  props: {
+    seed: {
+      type: Number,
+      default: Math.round(Math.random() * 10000000)
+    },
+    diameter: {
+      type: Number,
+      default: 100
+    },
+    address: {
+      type: String,
+      default: null
+    },
+    shapeCount: {
+      type: Number,
+      default: 4
+    },
+    colors: {
+      type: Array,
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      default: () =&gt; [</span></span>
+        '#01888C', // teal
+        '#FC7500', // bright orange
+        '#034F5D', // dark teal
+        '#F73F01', // orangered
+        '#FC1960', // magenta
+        '#C7144C', // raspberry
+        '#F3C100', // goldenrod
+        '#1598F2', // lightning blue
+        '#2465E1', // sail blue
+        '#F19E02' // gold
+      ]
+    },
+    svgns: {
+      type: String,
+      default: 'http://www.w3.org/2000/svg'
+    }
+  },
+  data() {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      generator: null
+    };
+  },
+  watch: {
+    seed: {
+      handler() {
+<span class="cstat-no" title="statement not covered" >        this.icon();</span>
+      }
+    },
+    address: {
+      handler() {
+<span class="cstat-no" title="statement not covered" >        this.icon();</span>
+      }
+    },
+    diameter: {
+      handler() {
+<span class="cstat-no" title="statement not covered" >        this.icon();</span>
+      }
+    }
+  },
+  mounted() {
+<span class="cstat-no" title="statement not covered" >    this.icon();</span>
+  },
+  methods: {
+    async icon() {
+<span class="cstat-no" title="statement not covered" >      const seed = this.address ? addressToNumber(this.address) : this.seed;</span>
+<span class="cstat-no" title="statement not covered" >      this.$refs.jazzicon.innerHTML = '';</span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      const el = await this.generateIdenticon(this.diameter, seed);</span></span>
+<span class="cstat-no" title="statement not covered" >      await this.$refs.jazzicon.append(el);</span>
+    },
+    newPaper(diameter, color) {
+<span class="cstat-no" title="statement not covered" >      var container = document.createElement('div');</span>
+<span class="cstat-no" title="statement not covered" >      container.style.borderRadius = `${diameter / 2}px`;</span>
+<span class="cstat-no" title="statement not covered" >      container.style.overflow = 'hidden';</span>
+<span class="cstat-no" title="statement not covered" >      container.style.padding = '0px';</span>
+<span class="cstat-no" title="statement not covered" >      container.style.margin = '0px';</span>
+<span class="cstat-no" title="statement not covered" >      container.style.width = '' + diameter + 'px';</span>
+<span class="cstat-no" title="statement not covered" >      container.style.height = '' + diameter + 'px';</span>
+<span class="cstat-no" title="statement not covered" >      container.style.display = 'inline-block';</span>
+<span class="cstat-no" title="statement not covered" >      container.style.background = color;</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        container: container
+      };
+    },
+    generateIdenticon(diameter, seed) {
+<span class="cstat-no" title="statement not covered" >      this.generator = new MersenneTwister(seed);</span>
+<span class="cstat-no" title="statement not covered" >      var remainingColors = this.hueShift(this.colors.slice(), this.generator);</span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var elements = this.newPaper(diameter, this.genColor(remainingColors));</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var container = elements.container;</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var svg = document.createElementNS(this.svgns, 'svg');</span></span>
+<span class="cstat-no" title="statement not covered" >      svg.setAttributeNS(null, 'x', '0');</span>
+<span class="cstat-no" title="statement not covered" >      svg.setAttributeNS(null, 'y', '0');</span>
+<span class="cstat-no" title="statement not covered" >      svg.setAttributeNS(null, 'width', diameter);</span>
+<span class="cstat-no" title="statement not covered" >      svg.setAttributeNS(null, 'height', diameter);</span>
+<span class="cstat-no" title="statement not covered" >      container.appendChild(svg);</span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      for (var i = 0; i &lt; this.shapeCount - 1; i++) {</span></span>
+<span class="cstat-no" title="statement not covered" >        this.genShape(remainingColors, diameter, i, this.shapeCount - 1, svg);</span>
+      }
+<span class="cstat-no" title="statement not covered" >      return container;</span>
+    },
+    genShape(remainingColors, diameter, i, total, svg) {
+<span class="cstat-no" title="statement not covered" >      var center = diameter / 2;</span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var shape = document.createElementNS(this.svgns, 'rect');</span></span>
+<span class="cstat-no" title="statement not covered" >      shape.setAttributeNS(null, 'x', '0');</span>
+<span class="cstat-no" title="statement not covered" >      shape.setAttributeNS(null, 'y', '0');</span>
+<span class="cstat-no" title="statement not covered" >      shape.setAttributeNS(null, 'width', diameter);</span>
+<span class="cstat-no" title="statement not covered" >      shape.setAttributeNS(null, 'height', diameter);</span>
+<span class="cstat-no" title="statement not covered" >      var firstRot = this.generator.random();</span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var angle = Math.PI * 2 * firstRot;</span></span>
+      var velocity =
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >        (diameter / total) * this.generator.random() + (i * diameter) / total;</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var tx = Math.cos(angle) * velocity;</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var ty = Math.sin(angle) * velocity;</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var translate = 'translate(' + tx + ' ' + ty + ')';</span></span>
+      // Third random is a shape rotation on top of all of that.
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var secondRot = this.generator.random();</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var rot = firstRot * 360 + secondRot * 180;</span></span>
+      var rotate =
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >        'rotate(' + rot.toFixed(1) + ' ' + center + ' ' + center + ')';</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var transform = translate + ' ' + rotate;</span></span>
+<span class="cstat-no" title="statement not covered" >      shape.setAttributeNS(null, 'transform', transform);</span>
+<span class="cstat-no" title="statement not covered" >      var fill = this.genColor(remainingColors);</span>
+<span class="cstat-no" title="statement not covered" >      shape.setAttributeNS(null, 'fill', fill);</span>
+<span class="cstat-no" title="statement not covered" >      svg.appendChild(shape);</span>
+    },
+    genColor(colors) {
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var rand = this.generator.random();</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var idx = Math.floor(colors.length * this.generator.random());</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      var color = colors.splice(idx, 1)[0];</span></span>
+<span class="cstat-no" title="statement not covered" >      return color;</span>
+    },
+    hueShift(colors, generator) {
+<span class="cstat-no" title="statement not covered" >      const wobble = 30;</span>
+<span class="cstat-no" title="statement not covered" >      var amount = generator.random() * 30 - wobble / 2;</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      return colors.map(function(hex) {</span></span>
+<span class="cstat-no" title="statement not covered" >        var color = Color(hex);</span>
+<span class="cstat-no" title="statement not covered" >        color.rotate(amount);</span>
+<span class="cstat-no" title="statement not covered" >        return color.hex();</span>
+      });
+    }
+  }
+};
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 16 2019 17:13:49 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

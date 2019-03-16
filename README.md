@@ -4,6 +4,7 @@ A dead-simple Jazzicon component for Vue.
 
 > Say goodbye to boring blocky identicons that look like they came out of the 70s, and replace them with jazzy, colorful collages that more likely came out of the 80's
 
+![Jazzicon](src/images/identicons.png)
 
 
 ## Install
@@ -59,12 +60,30 @@ App.vue
 
 ## Props
 
-| Name        | Description        | Type     | Default      | Accepted values          |
-| ----------- | ------------------ | -------- | ------------ | ------------------------ |
-| `seed`      | seed for the icon  | `int`    | Random int   | Only positive integer    |
-| `address`   | Address for the icon| `string`| -            | String                   |
-| `diameter`  |  Diameter of icon  | `int`    | 100          | Positive integer         |
+| Name          | Description          | Type         | Default        | Accepted values          |
+| ------------- | -------------------- | ------------ | -------------- | ------------------------ |
+| `seed`        | Seed for the icon    | `Number`     | Random Number  | Only positive integer    |
+| `address`     | Address for the icon | `String`     | -              | Hex string               |
+| `diameter`    | Diameter of icon     | `Number`     | 100            | Positive integer         |
+| `shape-count` | Number of shapes     | `Number`     | 4              | Positive integer         |
+| `colors`      | Colors for icon      | `Array`      | See Below      | Array of Hex color code  |
 
+**Default Colors**
+
+```
+[
+    '#01888C', // teal
+    '#FC7500', // bright orange
+    '#034F5D', // dark teal
+    '#F73F01', // orangered
+    '#FC1960', // magenta
+    '#C7144C', // raspberry
+    '#F3C100', // goldenrod
+    '#1598F2', // lightning blue
+    '#2465E1', // sail blue
+    '#F19E02' // gold
+]
+```
 
 ## License
 
