@@ -39,15 +39,12 @@ export default {
         '#2465E1', // sail blue
         '#F19E02' // gold
       ]
-    },
-    svgns: {
-      type: String,
-      default: 'http://www.w3.org/2000/svg'
     }
   },
   data() {
     return {
-      generator: null
+      generator: null,
+      svgns: 'http://www.w3.org/2000/svg'
     };
   },
   watch: {
@@ -97,6 +94,7 @@ export default {
       var elements = this.newPaper(diameter, this.genColor(remainingColors));
       var container = elements.container;
       var svg = document.createElementNS(this.svgns, 'svg');
+      console.log(svg);
       svg.setAttributeNS(null, 'x', '0');
       svg.setAttributeNS(null, 'y', '0');
       svg.setAttributeNS(null, 'width', diameter);

@@ -1,10 +1,17 @@
+
+[![npm](https://img.shields.io/npm/v/vue-jazzicon.svg)](https://www.npmjs.com/package/vue-jazzicon)    [![travis](https://img.shields.io/travis/man15h/vue-jazzicon.svg)](https://www.npmjs.com/package/vue-jazzicon) [![npm](https://img.shields.io/npm/dw/vue-jazzicon.svg)](https://www.npmjs.com/package/vue-jazzicon) [![npm](https://img.shields.io/npm/l/vue-jazzicon.svg)](https://github.com/man15h/vue-jazzicon/blob/master/LICENSE)
+
+
 # vue-jazzicon
 
 A dead-simple Jazzicon component for Vue.
 
 > Say goodbye to boring blocky identicons that look like they came out of the 70s, and replace them with jazzy, colorful collages that more likely came out of the 80's
 
-![Jazzicon](src/images/identicons.png)
+![Jazzicon](public/identicons.png)
+
+
+## [Demo](https://vue-jazzicon.netlify.com/)
 
 
 ## Install

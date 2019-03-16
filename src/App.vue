@@ -36,6 +36,7 @@
 </template>
 <script>
 export default {
+  name: 'App',
   data() {
     return {
       input: '0x14e8d820996b84347a8a553a643c2953aa73be7b',
